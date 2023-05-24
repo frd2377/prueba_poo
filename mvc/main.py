@@ -4,6 +4,8 @@ from Controlador import Controlador
 
 modelo = Modelo()
 vista = Vista()
-controlador = Controlador()
+controlador = Controlador(modelo,vista)
+vista.controlador = controlador
 vista.run()
+
 
